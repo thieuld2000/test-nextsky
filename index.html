@@ -11,13 +11,13 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./asset/image/navbar-brand.svg" alt="navbar brand">
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand" href="#">
+            <img src="./asset/image/navbar-brand.svg" alt="navbar brand">
+        </a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -60,12 +60,13 @@
         </div>
         
         <div class="icons">
-            <img src="./asset/image/search.svg" alt="Search">
-            <img src="./asset/image/login.svg" alt="login">
-            <img src="./asset/image/recently-viewed.svg" alt="recently viewed">
-            <img src="./asset/image/wishlist.svg" alt="wishlist">
-            <img src="./asset/image/cart.svg" alt="Shopping Cart">
+            <img src="./asset/image/search.svg" alt="Search" class="icon-visible">
+            <img src="./asset/image/login.svg" alt="login" class="icon-hidden">
+            <img src="./asset/image/recently-viewed.svg" alt="recently viewed" class="icon-hidden">
+            <img src="./asset/image/wishlist.svg" alt="wishlist" class="icon-hidden">
+            <img src="./asset/image/cart.svg" alt="Shopping Cart" class="icon-visible">
         </div>
+        
     </nav>
     
 
@@ -308,22 +309,38 @@
                     <p>Enter your email address to get $10 off your first order and free shipping. Updates information on Sales and Offers.</p>
                 </div>
                 <form>
-                    <input type="email" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email...">
                     <button type="submit">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom container">
             <div class="language">
-                <a href="#">English - United States (USD $)</a>
+                <ul class="footer">
+                    <li class="footer-bottom-item">
+                        <a class="footer-link" href="#">English</a>
+                        <a class="icon-link" href="#">
+                            <img src="./asset/image/menu-icon.svg" alt="Menu Icon">
+                        </a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a class="footer-link" href="#">United States (USD $)</a>
+                        <a class="icon-link" href="#">
+                            <img src="./asset/image/menu-icon.svg" alt="Menu Icon">
+                        </a>
+                    </li>
             </div>
             <div class="copyright">
                 © 2023 Umino Store. All Rights Reserved.
             </div>
             <div class="payment-methods">
-                <img src="visa.png" alt="Visa">
-                <img src="mastercard.png" alt="Mastercard">
-                <img src="paypal.png" alt="Paypal">
+                <img src="./asset/image/visa.svg" alt="Visa">
+                <img src="./asset/image/master-card.svg" alt="Mastercard">
+                <img src="./asset/image/discover.svg" alt="Discover">
+                <img src="./asset/image/westurn-union.svg" alt="Westurn Union">
+                <img src="./asset/image/amex.svg" alt="Mastercard">
+                <img src="./asset/image/cirrus.svg" alt="Cirrus">
+                <img src="./asset/image/paypal.svg" alt="Paypal">
             </div>
         </div>
     </footer>

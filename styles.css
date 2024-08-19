@@ -38,6 +38,10 @@ nav {
     padding: 0px
 }
 
+.navbar-toggler {
+  border: none; /* Xóa border nếu có */
+  background: none; /* Xóa background nếu có */
+}
   .navbar-collapse {
     display: flex !important;
     flex-grow: 1; 
@@ -128,10 +132,9 @@ nav {
 
 .swiper-button-next:active,
 .swiper-button-prev:active {
-  background-color: #000; /* Màu nền khi nhấn */
-  color: #fff; /* Màu mũi tên khi nhấn */
+  background-color: #000; 
+  color: #fff; 
 }
-
 .container{
     max-width: 1410px;
     margin-top:40px
@@ -501,23 +504,20 @@ line-height: 18.79px;
 }
 
 .footer-item {
-  flex: 1;
-  padding: 10px;
+
+  padding-top: 70px;
 }
 
 
 .logo {
-  flex: 2;
   max-width: 340px;
 }
 
 .categories, .customer-service {
-  flex: 1;
-  max-width: 137px;
+  max-width: 200px;
 }
 
 .newsletter {
-  flex: 3;
   max-width: 450px;
 }
 
@@ -545,17 +545,26 @@ form button[type="submit"] {
   padding: 10px 20px;
   max-width: 150px;
   height: 50px;
-  font-size: 16px;
-  font-weight: 600;
   background-color: #333;
   color: #fff;
   border: none;
   border-radius:  30px ; 
   cursor: pointer;
+  font-family: Jost;
+font-size: 12px;
+font-weight: 600;
+line-height: 17.34px;
+text-align: center;
+
 }
 
 form input[type="email"]::placeholder {
-  color: #aaa;
+  font-family: Jost;
+font-size: 14px;
+font-weight: 400;
+line-height: 20.23px;
+text-align: left;
+color: #999999;
 }
 
 form button[type="submit"]:hover {
@@ -567,13 +576,16 @@ form button {
 }
 .footer-bottom {
   display: flex;
+  height: 62px;
   justify-content: space-between; 
   align-items: center; 
-  padding: 10px 0; 
+  padding: 50px 0 30px 0; 
   border-top: 1px solid #ddd; 
 }
 
 .payment-methods img {
+  width: 43px;
+  height: 26px;
   margin-right: 10px;
 }
 
@@ -616,6 +628,105 @@ color: #111111;
 }
 
 
+.language a{
+font-family: Jost;
+text-decoration: none;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.12px;
+color: #555555;
+}
 
+.footer {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+}
 
+.footer-link, 
+.copyright {
+font-family: Jost;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.12px;
+text-align: left;
+color: #555555;
+}
 /* Responsive */
+
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .navbar-nav {
+    display: none;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  
+
+  .navbar {
+    flex-wrap: nowrap;
+  }
+ .icon-hidden {
+    display: none;
+  }
+  .icons {
+    display: flex;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+
+
+    header .carousel-caption {
+      width:  239px;
+      height:  203px;
+      top: 46px;
+      left: 21px;
+      opacity: 0px;
+      text-align: left;
+      
+    }
+    
+    .carousel-caption > h1 {
+      font-family: Jost;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 45px;
+      text-align: left;
+    }
+
+    .carousel-caption > p {
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.12px;
+      
+}
+
+.btn-dark {
+  margin-left: 0;
+}
+
+.swiper-pagination {
+  top: 36vh !important; 
+}
+}
